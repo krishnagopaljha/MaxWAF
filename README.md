@@ -109,6 +109,7 @@ MaxWAF is configured entirely through **environment variables**. You can set the
     *   _Description_: Set to passthrough to disable all security checks, which is useful for benchmarking performance.
         
     *   _Default_: enforcing
+      
 Installation
 ------------
 
