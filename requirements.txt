@@ -1,0 +1,7 @@
+ bleach
+ Flask
+ gunicorn
+ lxml
+ redis
+ requests
+ sqlparse
