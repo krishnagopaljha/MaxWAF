@@ -113,8 +113,10 @@ MaxWAF is configured entirely through **environment variables**. You can set the
 Installation
 ------------
 
-1.  Bashgit clone cd
+1.  ```git clone https://github.com/krishnagopaljha/MaxWAF.git```
     
+2.  ``` pip install -r requirements.txt ```
+
    ```
     bleach
     Flask
@@ -125,9 +127,7 @@ Installation
     sqlparse
    ```
     
-3.  ``` pip install -r requirements.txt ```
-    
-4.  **Ensure Redis is running** and accessible from where you are running the WAF.
+3.  **Ensure Redis is running** and accessible from where you are running the WAF.
 
 
 Running the WAF
