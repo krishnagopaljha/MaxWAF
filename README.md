@@ -52,8 +52,16 @@ Installation
 
 1.  Bashgit clone cd
     
-2.  bleachFlaskgunicornlxmlredisrequestssqlparse
+   ```
+    bleach
+    Flask
+    gunicorn
+    lxml
+    redis
+    requests
+    sqlparse
+   ```
     
-3.  Bashpip install -r requirements.txt
+3.  ``` pip install -r requirements.txt ```
     
 4.  **Ensure Redis is running** and accessible from where you are running the WAF.
