@@ -134,7 +134,8 @@ Running the WAF
 ---------------
 
 ``` redis-server ```
-**Run the Logger Service (in a separate terminal/process):**
+
+**Run the main WAF file:**
 
 ```python main.py```
 
