@@ -65,3 +65,13 @@ Installation
 3.  ``` pip install -r requirements.txt ```
     
 4.  **Ensure Redis is running** and accessible from where you are running the WAF.
+
+
+Running the WAF
+---------------
+
+``` gunicorn --workers 4 --bind 0.0.0.0:8080 waf:app ```
+
+**Run the Logger Service (in a separate terminal/process):**
+
+```python logger.py```
