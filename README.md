@@ -46,7 +46,69 @@ Requirements
     
 *   Required Python packages, which can be installed from requirements.txt.
     
+Configuration
+-------------
+MaxWAF is configured entirely through **environment variables**. You can set them in your terminal, a .env file, or your deployment environment (like Docker, Kubernetes, or Heroku.
 
+*   **REAL\_APP\_HOST**
+    
+    *   _Description_: The hostname or IP of your backend web application.
+        
+    *   _Default_: localhost
+        
+*   **REAL\_APP\_PORT**
+    
+    *   _Description_: The port your backend web application is running on.
+        
+    *   _Default_: 80
+        
+*   **REDIS\_HOST**
+    
+    *   _Description_: The hostname or IP of your Redis server.
+        
+    *   _Default_: localhost
+        
+*   **REDIS\_PORT**
+    
+    *   _Description_: The port your Redis server is running on.
+        
+    *   _Default_: 6379
+        
+*   **RATE\_LIMIT\_COUNT**
+    
+    *   _Description_: Maximum number of requests allowed from a single IP within the time window.
+        
+    *   _Default_: 100
+        
+*   **RATE\_LIMIT\_WINDOW**
+    
+    *   _Description_: The time window for rate limiting, in seconds.
+        
+    *   _Default_: 60
+        
+*   **BAN\_DURATION**
+    
+    *   _Description_: How long an IP is banned after hitting the BAN\_SCORE\_THRESHOLD, in seconds.
+        
+    *   _Default_: 300
+        
+*   **THREAT\_SCORE\_THRESHOLD**
+    
+    *   _Description_: A request with a total score above this value will be **blocked** with a 403 error.
+        
+    *   _Default_: 15
+        
+*   **BAN\_SCORE\_THRESHOLD**
+    
+    *   _Description_: A request with a total score above this value will cause the source IP to be **banned**.
+        
+    *   _Default_: 25
+        
+*   **WAF\_MODE**
+    
+    *   _Description_: Set to passthrough to disable all security checks, which is useful for benchmarking performance.
+        
+    *   _Default_: enforcing
 Installation
 ------------
 
