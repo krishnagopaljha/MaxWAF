@@ -70,7 +70,7 @@ Installation
 Running the WAF
 ---------------
 
-``` gunicorn --workers 4 --bind 0.0.0.0:8080 waf:app ```
+``` redis-server ```
 
 **Run the Logger Service (in a separate terminal/process):**
 
